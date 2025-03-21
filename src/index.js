@@ -1,3 +1,10 @@
+import "./style.css";
+
+import heroImage from "./images/hero.png";
+import foodOneImage from "./images/food1.avif";
+import restaurantImage from "./images/restaurant.jpg";
+import mapImage from "./images/map.png";
+
 const contentEl = document.querySelector(".content");
 const homeBtnEl = document.querySelector(".home");
 
@@ -18,7 +25,7 @@ function createHomePage() {
 
   const imageContainerEl = document.createElement("div");
   const imagEl = document.createElement("img");
-  imagEl.setAttribute("src", "images/hero.png");
+  imagEl.setAttribute("src", heroImage);
   imageContainerEl.appendChild(imagEl);
 
   homePageHeadingsEl.append(imageContainerEl);
@@ -38,7 +45,7 @@ function generateFoodOption(menuEl) {
     menuListEl.classList.add("dishContent");
 
     const imgEl = document.createElement("img");
-    imgEl.setAttribute("src", "images/food1.avif");
+    imgEl.setAttribute("src", foodOneImage);
 
     const menuListContent = document.createElement("div");
     menuListContent.classList.add("dishContentList");
@@ -165,9 +172,9 @@ function generateContactBoard() {
 
   const locationContainer = document.createElement("div");
   const mapContainer = document.createElement("img");
-  mapContainer.setAttribute("src", "images/map.png");
+  mapContainer.setAttribute("src", mapImage);
   const restaurantContainer = document.createElement("img");
-  restaurantContainer.setAttribute("src", "images/restaurant.jpg");
+  restaurantContainer.setAttribute("src", restaurantImage);
 
   locationContainer.append(mapContainer, restaurantContainer);
 
