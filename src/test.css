@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+}
+
+.main-page {
+    height: 100vh;
+    background-color: powderblue;
+    background-image: url("./images/bg-hero.jpg");
+}
+
+.bg-overlay {
+    background-color: #0f172be3;
+    
+}
+
+header {
+  
+    position: sticky;
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: .8rem;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+header nav {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+header h1 {
+    color: var(--primary);
+}
+
+header button {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header button:nth-child(1) {
+    color: var(--primary);
+}
+
+header button:last-child {
+    background-color: var(--primary);
+    padding: .7rem 1rem;
+    border-radius: 4px;
+}
+
+img {
+    width: 100px;
+}
+
+@media (max-width: 550px) {
+    header h1, header nav {
+        flex-basis: 100%;
+    }
+
+    header {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    header nav button:last-child {display: none;}
+
+}
